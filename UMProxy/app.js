@@ -38,3 +38,4 @@ function packetReceive(msg, info) {
 
 proxyStart();
 console.log("[Proxy] Proxy listening on port " + config.proxyPort);
+console.log("[Proxy] To stop proxy-script use Ctrl+C");
