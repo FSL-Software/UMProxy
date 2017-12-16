@@ -13,7 +13,7 @@ var proxy = new EventEmitter();
 var connections = {};
 
 function proxyStart() {
-    client.bind(config.proxyPort);
+    client.bind(config.proxyPort, "0.0.0.0");
     client.on("message", function (msg, info) {
         packetReceive(msg, info);
     });
